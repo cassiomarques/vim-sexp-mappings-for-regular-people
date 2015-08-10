@@ -18,12 +18,12 @@ function! s:sexp_mappings() abort
     return
   endif
   call s:map_sexp_wrap('e', 'cseb', '(', ')', 0)
-  call s:map_sexp_wrap('e', 'cse(', '(', ')', 0)
-  call s:map_sexp_wrap('e', 'cse)', '(', ')', 1)
-  call s:map_sexp_wrap('e', 'cse[', '[', ']', 0)
-  call s:map_sexp_wrap('e', 'cse]', '[', ']', 1)
-  call s:map_sexp_wrap('e', 'cse{', '{', '}', 0)
-  call s:map_sexp_wrap('e', 'cse}', '{', '}', 1)
+  call s:map_sexp_wrap('e', '<leader>9', '(', ')', 0)
+  call s:map_sexp_wrap('e', '<leader>0', '(', ')', 1)
+  call s:map_sexp_wrap('e', '<leader>[', '[', ']', 0)
+  call s:map_sexp_wrap('e', '<leader>]', '[', ']', 1)
+  call s:map_sexp_wrap('e', '<leader>{', '{', '}', 0)
+  call s:map_sexp_wrap('e', '<leader>}', '{', '}', 1)
 
   nmap <buffer> dsf <Plug>(sexp_splice_list)
 
